@@ -3,10 +3,12 @@ package conta.jsf;
 import conta.to.ContaTO;
 import conta.to.NumeroTO;
 import conta.to.TransferenciaTO;
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.bean.ManagedBean;
-import jakarta.faces.bean.ViewScoped;
 import jakarta.faces.context.FacesContext;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.http.HttpEntity;
@@ -48,6 +50,7 @@ public class TransferenciaFrm implements Serializable {
         // configuração do rest para processar json.
         rest = new RestTemplate();
         rest.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+
     }
 
     // operações privadas de apoio
