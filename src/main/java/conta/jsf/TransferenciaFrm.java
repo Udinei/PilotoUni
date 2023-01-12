@@ -7,6 +7,8 @@ import jakarta.faces.application.FacesMessage;
 import jakarta.faces.bean.ManagedBean;
 import jakarta.faces.bean.ViewScoped;
 import jakarta.faces.context.FacesContext;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -24,6 +26,8 @@ import static org.springframework.http.HttpMethod.PUT;
 import static org.springframework.http.HttpStatus.*;
 
 // Adaptador JSF
+@Getter
+@Setter
 @ManagedBean
 @ViewScoped
 public class TransferenciaFrm implements Serializable {
@@ -166,7 +170,6 @@ public class TransferenciaFrm implements Serializable {
     }
     // ---------------------------------------
 
-    // gets e sets
 
     public Integer getConta1() {
 
@@ -174,39 +177,4 @@ public class TransferenciaFrm implements Serializable {
         return conta1;
     }
 
-    public void setConta1(Integer conta1) {
-        this.conta1 = conta1;
-    }
-
-    public String getDescricao1() {
-        return descricao1;
-    }
-
-    public void setDescricao1(String descricao1) {
-        this.descricao1 = descricao1;
-    }
-
-    public Integer getConta2() {
-        return conta2;
-    }
-
-    public void setConta2(Integer conta2) {
-        this.conta2 = conta2;
-    }
-
-    public String getDescricao2() {
-        return descricao2;
-    }
-
-    public void setDescricao2(String descricao2) {
-        this.descricao2 = descricao2;
-    }
-
-    public BigDecimal getValor() {
-        return valor;
-    }
-
-    public void setValor(BigDecimal valor) {
-        this.valor = valor;
-    }
 }

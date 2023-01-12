@@ -9,4 +9,14 @@
     </welcome-file-list>
 
 
+<!-- abaixo tentativa de configurar bean CDI - apagar apos testes is not work -->
+    <listener>
+        <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+    </listener>
+
+    <resource-env-ref>
+        <resource-env-ref-name>BeanManager</resource-env-ref-name>
+        <resource-env-ref-type>jakarta.enterprise.inject.spi.BeanManager</resource-env-ref-type>
+    </resource-env-ref>
+
 </web-app>
