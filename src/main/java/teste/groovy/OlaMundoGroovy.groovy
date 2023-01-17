@@ -1,4 +1,4 @@
-package TestGroovy
+package teste.groovy
 
 class OlaMundoGroovy {
     static main(args){

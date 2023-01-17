@@ -1,7 +1,9 @@
+package teste.integra.jsf.cdi;
+
 import jakarta.faces.application.FacesMessage;
-import jakarta.faces.bean.ManagedBean;
-import jakarta.faces.bean.ViewScoped;
 import jakarta.faces.context.FacesContext;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,7 +12,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-@ManagedBean
+@Named
 @ViewScoped
 public class PerfilUsuarioBean implements Serializable {
 
@@ -25,6 +27,7 @@ public class PerfilUsuarioBean implements Serializable {
 	}
 
 	public Date getDataHoje() {
+		System.out.println("passou aqui..");
 		return new Date();
 	}
 

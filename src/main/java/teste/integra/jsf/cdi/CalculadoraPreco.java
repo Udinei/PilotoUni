@@ -1,6 +1,5 @@
-import jakarta.inject.Named;
+package teste.integra.jsf.cdi;
 
-@Named
 public class CalculadoraPreco {
     public double calcularPreco(int quantidade, double precoUnitario) {
         return quantidade * precoUnitario;

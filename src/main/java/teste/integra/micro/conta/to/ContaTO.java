@@ -1,4 +1,4 @@
-package conta.to;
+package teste.integra.micro.conta.to;
 
 import java.math.BigDecimal;
 

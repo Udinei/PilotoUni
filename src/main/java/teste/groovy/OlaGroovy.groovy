@@ -1,4 +1,4 @@
-package TestGroovy
+package teste.groovy
 
 println('Olá Groovy')
 

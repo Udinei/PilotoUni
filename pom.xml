@@ -24,11 +24,7 @@
         <junit.version>5.9.1</junit.version>
         <lombok.version>1.18.24</lombok.version>
         <groovy.version>4.0.1</groovy.version>
-
-        <annotation.api.version>2.1.0</annotation.api.version>
-        <atinject.api.version>2.0.1</atinject.api.version>
-        <uel.api.version>5.0.0</uel.api.version>
-        <interceptor.api.version>2.1.0</interceptor.api.version>
+        <wel-servlet.version>5.1.0.Final</wel-servlet.version>
     </properties>
 
     <dependencies>
@@ -70,7 +66,7 @@
             <version>${all-themes.version}</version>
         </dependency>
         <!-- CDI -->
-       <dependency>
+     <dependency>
             <groupId>jakarta.enterprise</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
             <version>${jakarta.cdi.version}</version>
@@ -87,7 +83,11 @@
             <artifactId>groovy</artifactId>
             <version>${groovy.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.jboss.weld.servlet</groupId>
+            <artifactId>weld-servlet-shaded</artifactId>
+            <version>${wel-servlet.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -104,7 +104,7 @@
     </dependencies>
 
 
-    <build>
+     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -113,4 +113,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

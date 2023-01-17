@@ -1,11 +1,9 @@
-package conta.jsf;
+package teste.integra.micro.conta.jsf;
 
-import conta.to.ContaTO;
-import conta.to.NumeroTO;
-import conta.to.TransferenciaTO;
-import jakarta.enterprise.context.RequestScoped;
+import teste.integra.micro.conta.to.ContaTO;
+import teste.integra.micro.conta.to.NumeroTO;
+import teste.integra.micro.conta.to.TransferenciaTO;
 import jakarta.faces.application.FacesMessage;
-import jakarta.faces.bean.ManagedBean;
 import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
@@ -30,7 +28,7 @@ import static org.springframework.http.HttpStatus.*;
 // Adaptador JSF
 @Getter
 @Setter
-@ManagedBean
+@Named
 @ViewScoped
 public class TransferenciaFrm implements Serializable {
 

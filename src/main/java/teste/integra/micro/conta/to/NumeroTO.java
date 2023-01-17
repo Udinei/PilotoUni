@@ -1,4 +1,4 @@
-package conta.to;
+package teste.integra.micro.conta.to;
 
 // mesmo to do microservices
 public class NumeroTO {

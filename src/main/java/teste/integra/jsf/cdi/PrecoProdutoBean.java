@@ -1,22 +1,20 @@
-import jakarta.ejb.EJB;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.enterprise.context.RequestScoped;
-import jakarta.faces.bean.ManagedBean;
-import jakarta.faces.view.ViewScoped;
+package teste.integra.jsf.cdi;
+
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import java.io.Serializable;
 
 @Getter
 @Setter
-@ManagedBean
-@ViewScoped
-public class PrecoProdutoBean {
+@Named
+public class PrecoProdutoBean implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 
-	@Inject 
+	@Inject
 	private CalculadoraPreco calculadora;
 	
 	public double getPreco() {
