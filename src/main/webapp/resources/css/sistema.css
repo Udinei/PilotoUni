@@ -5,35 +5,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     font-weight: normal;
-    /** background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
-    background-image: url("../images/bird4.png");
-    /**
-    height: 10em;
-    background-size: contain;
+   /* background-image: url('https://files.fm/thumb_show.php?i=fejvs6pgf'); */
+   /** background-image: url('../images/logo-algaworks.png'); **/
     background-repeat: no-repeat;
-    */
-    /*/* background-image: url('../images/logo-algaworks.png'); **/
-    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding-bottom: 100%;
-    width: 100%;
-
+    background-size: cover;
+    height: 924px;
+    background: #DCDCDC;
 }
 
 header {
     padding: 5px 0px;
     margin-bottom: 20px;
-    height: 90px;
+    height: 100px;
 
-    background-color: #d0b21a;
-    color: #fff; /** cor do texto */
+    background-color: #fff;
+    color: #fff;
 
     box-shadow: 0px 2px 2px #ccc;
+
 }
 
 header > div {
-  margin-right: 24px
+    margin-left: 8px
 }
 
 #conteudo {
@@ -41,8 +35,14 @@ header > div {
 }
 
 footer {
-    padding: 0px 8px;
-    margin-bottom: 10px
+
+
+    /**textos */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #265C5C;
 }
 
 h1 {
@@ -73,13 +73,23 @@ h1 {
 
 #informe {
     width: 100%;
-    margin-top: 20px;
-    background-color: #DC143C;
+    margin-top: 3px;
     color: #fff;
-    margin-left: 8px;
     position: absolute;
-    width: 1440px;
     height: 33px;
     left: 0px;
     top: 97px;
+    background: #265C5C;
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 35px;
+}
+
+.imagem-logo {
+    width: 276px;
+    height: 46px;
+    margin-top: 32px;
+    margin-left: 22px;
+    border-radius: 0px;
+
 }

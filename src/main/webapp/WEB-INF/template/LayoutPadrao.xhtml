@@ -18,25 +18,25 @@
     <header>
         <div>
             <h:link>
-                <h:graphicImage library="images" name="logo-credcoamo.png" />
+                <h:graphicImage library="images" name="logo-credcoamo.png" styleClass="imagem-logo"/>
 
                 <div id="informe">
-                    <p:outputLabel value="| Central de atendimento 0800-4001112" />
+                    <p:outputLabel value="|     Central de atendimento 0800-4001112" />
                 </div>
             </h:link>
         </div>
     </header>
 
-    <div id="conteudo">
+    <div id="conteudo" style="background-color: white">
         <ui:insert name="corpo"/>
     </div>
 
     <p:separator style="margin-top: 20px"/>
 
     <footer>
-        Curso Online de Sistemas Comerciais Java EE com CDI, JPA e PrimeFaces -
-        <a href="http://bit.ly/Y8saFl" target="_blank">www.siteempresa.com</a>
+        <p:outputLabel value="Ouvidoria 0800-6432211" />
     </footer>
+
 </h:body>
 
 </html>
