@@ -5,7 +5,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     font-weight: normal;
-    background-image: url("../images/img-background.png");
+   /** background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
+    background-image: url('https://github.com/Udinei/PilotoUni/blob/main/src/main/webapp/resources/images/img-background.jpg');
     height: 10em;
     background-size: contain;
     background-repeat: no-repeat;
@@ -16,7 +17,7 @@ header {
     margin-bottom: 20px;
     height: 90px;
 
-    background-color: #545454;
+    background-color: #d01a1a;
     color: #fff; /** cor do texto */
 
     box-shadow: 0px 2px 2px #ccc;
