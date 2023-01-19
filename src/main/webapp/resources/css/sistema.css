@@ -5,11 +5,20 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     font-weight: normal;
-   /** background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
-    background-image: url('https://github.com/Udinei/PilotoUni/blob/main/src/main/webapp/resources/images/img-background.jpg');
+    /** background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg'); */
+    background-image: url("../images/bird4.png");
+    /**
     height: 10em;
     background-size: contain;
     background-repeat: no-repeat;
+    */
+    /*/* background-image: url('../images/logo-algaworks.png'); **/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 100%;
+    width: 100%;
+
 }
 
 header {
@@ -17,7 +26,7 @@ header {
     margin-bottom: 20px;
     height: 90px;
 
-    background-color: #d01a1a;
+    background-color: #d0b21a;
     color: #fff; /** cor do texto */
 
     box-shadow: 0px 2px 2px #ccc;
