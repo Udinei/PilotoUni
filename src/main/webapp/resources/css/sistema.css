@@ -16,9 +16,8 @@ body {
 
 header {
     padding: 5px 0px;
-    margin-bottom: 20px;
-    height: 100px;
-
+   /* margin-bottom: 20px; */
+    height: 135px;
     background-color: #fff;
     color: #fff;
 
@@ -27,16 +26,15 @@ header {
 }
 
 header > div {
-    margin-left: 8px
+    margin-left: 0px
 }
 
+
 #conteudo {
-    padding: 0px 8px
+    padding: 55px 8px
 }
 
 footer {
-
-
     /**textos */
     font-style: normal;
     font-weight: 500;
@@ -73,17 +71,16 @@ h1 {
 
 #informe {
     width: 100%;
-    margin-top: 3px;
+    margin-top: 0px;
     color: #fff;
     position: absolute;
     height: 33px;
-    left: 0px;
-    top: 97px;
     background: #265C5C;
     text-align: right;
     padding-top: 3px;
     padding-right: 35px;
 }
+
 
 .imagem-logo {
     width: 276px;
@@ -92,4 +89,15 @@ h1 {
     margin-left: 22px;
     border-radius: 0px;
 
+}
+
+.ui-toolbar {
+    /**display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;*/
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    with:100%;
 }

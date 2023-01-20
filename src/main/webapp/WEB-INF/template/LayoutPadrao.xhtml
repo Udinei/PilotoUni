@@ -16,22 +16,33 @@
 <h:body>
 
     <header>
-        <div>
+        <div style="display:inline">
             <h:link>
                 <h:graphicImage library="images" name="logo-credcoamo.png" styleClass="imagem-logo"/>
-
-                <div id="informe">
-                    <p:outputLabel value="|     Central de atendimento 0800-4001112" />
-                </div>
             </h:link>
+            <div id="informe" >
+                <p:outputLabel value="|&nbsp;&nbsp;&nbsp;&nbsp;    Central de atendimento 0800-4001112" />
+            </div>
+            <div>
+                <p:toolbar style="margin-top: 40px; justify-content: center; align-items: center" with="100%">
+                    <p:toolbarGroup align="center" >
+                        <p:button value="Home" outcome="/Home.xhtml" style="margin-right: 20px"/>
+                        <p:button value="Faturas" outcome="/Home.xhtml" style="margin-right: 20px"/>
+                        <p:button value="Manutenções" outcome="/Home.xhtml" style="margin-right: 20px"/>
+                    </p:toolbarGroup>
+                </p:toolbar>
+            </div>
+
         </div>
+
     </header>
 
     <div id="conteudo" style="background-color: white">
+
         <ui:insert name="corpo"/>
     </div>
 
-    <p:separator style="margin-top: 20px"/>
+    <p:separator style="margin-top: 20px"></p:separator>
 
     <footer>
         <p:outputLabel value="Ouvidoria 0800-6432211" />
