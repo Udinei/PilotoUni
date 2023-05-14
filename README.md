@@ -1,6 +1,6 @@
 # Objetivo
 Criar e configurar um projeto Jakarta EE 10 no Intellij 2022.3 e executar no Tomcat 10.1.4 utilizando as tecnologias da Stack abaixo.
-
+Nota: 
 # Stack
 - JDK 17.0.5
 - Intellij 2022.3
